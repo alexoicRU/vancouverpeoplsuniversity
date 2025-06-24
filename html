@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vancouver People's University</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: white;
+      margin-right: 1.5rem;
+      text-decoration: none;
+    }
+    main {
+      padding: 2rem;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1571260899304-425eee4c7efc') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .section {
+      margin-top: 2rem;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .lang-selector {
+      text-align: right;
+      padding: 0.5rem 2rem;
+      background-color: #e0e7f1;
+    }
+    .lang-selector a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #003366;
+      cursor: pointer;
+    }
+    .lang-content {
+      display: none;
+    }
+    .lang-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vancouver People's University</h1>
+    <nav>
+      <a href="#program">Serve the People</a>
+      <a href="#about">为人民服务</a>
+      <a href="#contact">Служим народу</a>
+    </nav>
+  </header>
+
+  <div class="lang-selector">
+    Language: 
+    <a onclick="switchLang('en')">English</a> |
+    <a onclick="switchLang('zh')">繁體中文</a> |
+    <a onclick="switchLang('ja')">日本語</a> |
+    <a onclick="switchLang('fr')">Français</a>
+  </div>
+
+  <div class="hero">
+    English Department - Study Abroad Preparation Program
+  </div>
+
+  <main>
+    <div class="lang-content active" id="lang-en">
+      <section class="section">
+        <h2>Study Abroad Preparation Program</h2>
+        <p><strong>Dates:</strong> July 28 – August 21</p>
+        <p>This immersive program is designed for students aiming to pursue higher education abroad. The program includes academic seminars, English writing workshops, cultural excursions, and campus tours.</p>
+        <h2>About Our University</h2>
+        <p>Located in the vibrant city of Vancouver, Vancouver People's University is committed to providing students with high-quality education and global learning experiences. Our English Department is recognized for its innovative curriculum and dedicated faculty.</p>
+        <h2>Contact Us</h2>
+        <p>Email: info@vancouverpu.edu</p>
+        <p>Phone: +1 (604) 555-1234</p>
+        <p>Address: 123 Liberty Ave, Vancouver, BC, Canada</p>
+      </section>
+    </div>
+
+    <div class="lang-content" id="lang-zh">
+      <section class="section">
+        <h2>留學預備體驗營</h2>
+        <p><strong>日期：</strong>7月28日 至 8月21日 費用免費！</p>
+        <p>本課程為有志於海外升學的學生量身打造，內容包含學術講座、英文寫作工作坊、文化參訪與校園導覽。</p>
+        <h2>關於我們</h2>
+        <p>溫哥華人民大學位於多元文化的加拿大溫哥華市，致力於提供高品質教育與全球化學習經驗。我們的英語科擁有創新教學課程與專業教學團隊。</p>
+        <h2>聯絡方式</h2>
+        <p>電子郵件：info@vancouverpu.edu</p>
+        <p>電話：+1 (604) 555-1234</p>
+        <p>地址：123 Liberty Ave, Vancouver, BC, Canada</p>
+      </section>
+    </div>
+
+    <div class="lang-content" id="lang-ja">
+      <section class="section">
+        <h2>留学準備プログラム</h2>
+        <p><strong>期間：</strong>7月28日～8月21日 参加無料！</p>
+        <p>この集中プログラムは、海外の高等教育を目指す学生のために設計されています。学術セミナー、英語ライティングワークショップ、文化体験、キャンパスツアーを含みます。</p>
+        <h2>大学について</h2>
+        <p>バンクーバー市に位置するバンクーバー人民大学は、高品質な教育と国際的な学習体験を提供することを使命としています。当校の英語科は、革新的なカリキュラムと熱心な教員陣で知られています。</p>
+        <h2>お問い合わせ</h2>
+        <p>メール：info@vancouverpu.edu</p>
+        <p>電話：+1 (604) 555-1234</p>
+        <p>住所：123 Liberty Ave, Vancouver, BC, Canada</p>
+      </section>
+    </div>
+
+    <div class="lang-content" id="lang-fr">
+      <section class="section">
+        <h2>Programme de Préparation aux Études à l'Étranger</h2>
+        <p><strong>Dates :</strong> 28 juillet – 21 août</p>
+        <p>Ce programme immersif s'adresse aux étudiants souhaitant poursuivre des études supérieures à l'étranger. Il comprend des séminaires académiques, des ateliers d'écriture en anglais, des excursions culturelles et des visites de campus.</p>
+        <h2>À propos de notre université</h2>
+        <p>Située dans la ville dynamique de Vancouver, l'Université Populaire de Vancouver s'engage à offrir une éducation de qualité et des expériences d'apprentissage internationales. Notre département d'anglais est reconnu pour son programme novateur et son corps professoral dévoué.</p>
+        <h2>Contactez-nous</h2>
+        <p>Email : info@vancouverpu.edu</p>
+        <p>Téléphone : +1 (604) 555-1234</p>
+        <p>Adresse : 123 Liberty Ave, Vancouver, BC, Canada</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Vancouver People's University. All rights reserved.
+  </footer>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+      document.getElementById('lang-' + lang).classList.add('active');
+    }
+  </script>
+</body>
+</html>
